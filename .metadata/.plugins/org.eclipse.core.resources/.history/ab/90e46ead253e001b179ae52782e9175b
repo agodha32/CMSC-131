@@ -1,0 +1,42 @@
+
+public class ExamReview {
+		
+	public static int[][] multiplicationTable(int n) {
+		
+		int [][] x = new int[n][n];
+		
+		for(int row = 0; row < x.length; row++) {
+			
+			for(int col = 0; col < x[row].length; col++) {
+				
+				x[row][col] = ((row + 1) * (col + 1));
+				
+			}
+					
+		}
+		
+		for(int row = 0; row < x.length; row++) {
+			
+			for(int col = 0; col < x[row].length; col++) {
+				
+				System.out.print(x[row][col] + " ");
+				
+			}
+			
+			System.out.println();
+			
+		}
+		
+		return x;
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+
+		multiplicationTable(1);
+		
+	}
+	
+}

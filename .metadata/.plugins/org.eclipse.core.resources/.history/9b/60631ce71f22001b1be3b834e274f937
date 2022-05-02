@@ -1,0 +1,94 @@
+package poker;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StudentTests {
+
+	@Test
+	public void testBasicConstructorsAndGetters() {
+		
+		Deck x = new Deck();
+			
+		assertTrue(x.getNumCards() == 52);
+		
+		assertTrue(x.getCardAt(0).toString().equals("A of s"));
+		assertTrue(x.getCardAt(51).toString().equals("K of d"));
+		assertTrue(x.getCardAt(15).toString().equals("3 of h"));
+		assertTrue(x.getCardAt(30).toString().equals("5 of c"));
+		
+	}
+	
+	@Test
+	public void testcopyConstructor() {
+		
+		Deck x = new Deck();
+		Deck y = new Deck();
+		
+		assertTrue(x != y);
+		assertTrue(x.getCardAt(0).toString().equals(
+				y.getCardAt(0).toString()));
+		assertTrue(x.getCardAt(16).toString().equals(
+				y.getCardAt(16).toString()));
+		assertTrue(x.getCardAt(32).toString().equals(
+				y.getCardAt(32).toString()));
+		assertTrue(x.getCardAt(48).toString().equals(
+				y.getCardAt(48).toString()));
+		
+	}
+	
+	@Test
+	public void testShuffle() {
+		
+		Deck x = new Deck();
+		Deck y = new Deck();
+		
+		x.shuffle();
+
+		assertTrue(x.getCardAt(0).toString().equals("A of s"));
+		assertTrue(x.getCardAt(20).toString().equals("J of s"));
+		assertTrue(x.getCardAt(26).toString().equals("A of h"));
+		assertTrue(x.getCardAt(51).toString().equals("K of d"));
+		
+		y.deal(18);
+		y.shuffle();
+		
+		assertTrue(y.getCardAt(0).toString().equals("5 of h"));
+		assertTrue(y.getCardAt(19).toString().equals("6 of d"));
+		assertTrue(y.getCardAt(26).toString().equals("5 of c"));
+		assertTrue(y.getCardAt(34).toString().equals("9 of c"));
+		
+	}
+	
+	@Test
+	public void testCut() {
+		
+		Deck x = new Deck();
+		
+		x.cut(5);
+
+		assertTrue(x.getCardAt(0).toString().equals("6 of s"));
+		assertTrue(x.getCardAt(20).toString().equals("K of h"));
+		assertTrue(x.getCardAt(26).toString().equals("6 of c"));
+		assertTrue(x.getCardAt(43).toString().equals("10 of d"));
+		
+	}
+	
+	@Test
+	public void testdeal() {
+		
+		Deck x = new Deck();
+		
+		x.deal(4);
+		
+		assertFalse(x.getCardAt(0).toString().equals("A of s"));
+		assertTrue(x.getCardAt(0).toString().equals("5 of s"));
+		assertTrue(x.getCardAt(47).toString().equals("K of d"));
+		assertTrue(x.getCardAt(9).toString().equals("A of h"));
+		assertTrue(x.getCardAt(26).toString().equals("5 of c"));
+
+		
+	}
+	
+}

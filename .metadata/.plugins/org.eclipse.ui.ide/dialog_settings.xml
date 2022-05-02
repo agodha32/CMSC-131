@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\godha\Desktop\eclipse\CMSC131\131Fall20Exam01_1200PM"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\godha\Desktop\eclipse\CMSC131"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\godha\Downloads\131Fall20Final.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec38Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec37Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec36Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec35Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lab25.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Exam2_1200PM.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec30Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec29Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec27Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec28Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lab22.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lab21.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Proj6.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec26Examples.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Quiz07_1200PM.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lab19.zip"/>
+			<item value="C:\Users\godha\Downloads\131Fall20Lec25Examples.zip"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="534"/>
+		<item key="DIALOG_Y_ORIGIN" value="239"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

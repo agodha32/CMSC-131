@@ -1,0 +1,18 @@
+
+public class ExamReview {
+		
+	public static int[][] multiplicationTable(int n) {
+		
+		
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+
+		multiplicationTable(5);
+		
+	}
+	
+}

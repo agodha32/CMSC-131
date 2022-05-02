@@ -1,0 +1,85 @@
+package poker;
+
+/* This class evaluates the hand a person has, and returns each method with a 
+ * true or false depending on the cards */
+
+public class PokerHandEvaluator {
+	
+	private static Card cardOne, cardTwo, cardThree, cardFour, cardFive;
+	
+	/*This method checks if the set of cards has a pair */
+	
+	public static boolean hasPair(Card[] cards) {
+		
+		cardOne = cards[0], cardTwo = cards[1], cardThree = cards[2], 
+				cardFour = cards[3], cardFive = cards[4];
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has two pairs */
+	
+	public static boolean hasTwoPair(Card[] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has three of a kind */
+	
+	public static boolean hasThreeOfAKind(Card[] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has a straight set */
+	
+	public static boolean hasStraight(Card [] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has a flush */
+	
+	public static boolean hasFlush(Card[] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has a full house */
+	
+	public static boolean hasFullHouse(Card[] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has four of a kind */
+	
+	public static boolean hasFourOfAKind(Card[] cards) {
+		
+		
+		return true;
+		
+	}
+	
+	/*This method checks if the set of cards has a straight flush */
+	
+	public static boolean hasStraightFlush(Card[] cards) {
+		
+		
+		return true;	
+		
+	}
+	
+}
+

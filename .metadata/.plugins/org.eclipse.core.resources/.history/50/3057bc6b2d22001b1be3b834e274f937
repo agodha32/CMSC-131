@@ -1,0 +1,94 @@
+package poker;
+
+/* This class evaluates the hand a person has, and returns each method with a 
+ * true or false depending on the cards */
+
+public class PokerHandEvaluator {
+
+	/* This method checks if the set of cards has a pair */
+
+	public static boolean hasPair(Card[] cards) {
+
+		int counter = 0;
+
+		for (int cardOne = 0; cardOne < cards.length; cardOne++) {
+
+			for (int cardTwo = 0; cardTwo < cards.length; cardTwo++) {
+
+				if (cards[cardOne].getValue() == cards[cardTwo].getValue()) {
+
+					counter++;
+				}
+
+			}
+
+		}
+
+		int c0 = cards[0].getValue();
+		int c1 = cards[1].getValue();
+		int c2 = cards[2].getValue();
+		int c3 = cards[3].getValue();
+		int c4 = cards[4].getValue();
+
+		return (c0 == c1 || c0 == c2 || c0 == c3 || c0 == c4 || c1 == c2 || c1 == c3 || c1 == c4 || c2 == c3 || c2 == c4
+				|| c3 == c4);
+
+	}
+
+	/* This method checks if the set of cards has two pairs */
+
+	public static boolean hasTwoPair(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has three of a kind */
+
+	public static boolean hasThreeOfAKind(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has a straight set */
+
+	public static boolean hasStraight(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has a flush */
+
+	public static boolean hasFlush(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has a full house */
+
+	public static boolean hasFullHouse(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has four of a kind */
+
+	public static boolean hasFourOfAKind(Card[] cards) {
+
+		return true;
+
+	}
+
+	/* This method checks if the set of cards has a straight flush */
+
+	public static boolean hasStraightFlush(Card[] cards) {
+
+		return true;
+
+	}
+
+}

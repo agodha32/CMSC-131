@@ -1,0 +1,17 @@
+
+public class Quiz {
+		
+	public static void washDishes(int n) {
+		if (n == 1) {
+			System.out.println("Washing a dish");
+			return;
+		}
+			washDishes(n - 1);
+			System.out.println("Washing a dish");
+		
+	}
+	
+	public static void main(String[] args) {
+		washDishes(5);
+	}
+}

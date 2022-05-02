@@ -1,0 +1,105 @@
+package poker;
+
+/* Explain what this class can do. */
+
+public class Deck {
+
+	private Card[] cards; // stores all the cards left in the deck
+
+	/* This constructor creates a deck starting from the Ace of spaces going
+	 * all the way to the King of diamonds.  */
+	
+	public Deck() {
+		
+		cards = new Card[52]; // creates a new array of 52 cards
+		
+		int x = 0; // counts the total number of cards
+		
+		/* These two loops create a new card by assigning the suite and the 
+		 * card number to each location in the array. */
+		
+		for (int suit = 0; suit < 4; suit++) {
+			
+			for(int num = 1; num < 14; num++) {
+								
+				cards[x] = new Card(num, suit);
+				
+				x++; // moves the location to the next "spot"
+				
+			}
+			
+		}
+		
+	}
+	
+	/* This copy constructor creates a shallow copy of the original deck. */
+
+	public Deck(Deck other) {
+
+		this.cards = other.cards; // aliases a copy of the deck
+		
+	}
+
+	// This method returns what position a card is at in the deck
+	
+	public Card getCardAt(int position) {
+		
+		return cards[position]; // returning the card from 0 based indexing
+		
+	}
+
+	// This method returns the total number of cards in the deck
+	
+	public int getNumCards() {
+
+		return cards.length; // returns the length of the cards array
+		
+	}
+	
+	/* This method re-arranges the card in the deck. */
+
+	public void shuffle() {
+		
+		Card [] a, b, c;
+		
+		c = new Card[cards.length];
+		
+		if (cards.length % 2 != 0 ) {
+		
+			a = new Card[(cards.length / 2) + 1];
+			b = new Card[(cards.length / 2) - 1];
+			
+		} else {
+			
+			a = new Card[cards.length / 2];
+			b = new Card[cards.length / 2];
+			
+		}
+		
+		for (int num = 0; num < cards.length; num+= 2) {
+			
+			a[num] = cards[num];
+			b[num] = cards[num + (cards.length / 2)];
+			
+		}
+		
+		for (int num = 0; num < c.length; num+= 2) {
+			
+			c[num] = a[num];
+			c[num + 1] = b[num];
+			
+		}
+		
+	}
+
+	public void cut(int position) {
+		/* Remove the statement below and implement this method */
+		throw new UnsupportedOperationException();
+	}
+
+	public Card[] deal(int numCards) {
+		/* Remove the statement below and implement this method */
+		throw new UnsupportedOperationException();
+	}
+		
+}

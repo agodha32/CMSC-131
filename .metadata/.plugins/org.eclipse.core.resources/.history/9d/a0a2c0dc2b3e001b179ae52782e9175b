@@ -1,0 +1,66 @@
+
+public class ExamReview {
+
+	public static int[][] multiplicationTable(int n) {
+
+		int[][] x = new int[n][n];
+
+		for (int row = 0; row < x.length; row++) {
+
+			for (int col = 0; col < x[row].length; col++) {
+
+				x[row][col] = ((row + 1) * (col + 1));
+
+			}
+
+		}
+
+		return x;
+
+	}
+
+	public static int[] linearizeNoZeros(int[][] arr) {
+
+		int num = 0;
+
+		for (int y = 0; y < arr.length; y++) {
+
+			for (int z = 0; z < arr[y].length; z++) {
+
+				if (arr[y][z] != 0) {
+
+					num++;
+
+				}
+
+			}
+
+		}
+
+		int[] x = new int[num];
+
+		int counter = 0;
+
+		for (int y = 0; y < arr.length; y++) {
+
+			for (int z = 0; z < arr[y].length; z++) {
+
+				if (arr[y][z] != 0) {
+
+					x[counter] = arr[x][y];
+					counter++;
+
+				}
+
+			}
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		multiplicationTable(3);
+
+	}
+
+}

@@ -1,0 +1,30 @@
+
+public class ExamReview {
+		
+	public static int[][] multiplicationTable(int n) {
+		
+		int [][] x = new int[n][n];
+		
+		for(int row = 1; row <= x.length; row++) {
+			
+			for(int col = 1; col <= x[row].length; col++) {
+				
+				x[row - 1][col - 1] = (row * col);
+				
+			}
+					
+		}
+		
+		return x;
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+
+		multiplicationTable(5);
+		
+	}
+	
+}

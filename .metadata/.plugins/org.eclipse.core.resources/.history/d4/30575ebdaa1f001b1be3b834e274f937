@@ -1,0 +1,20 @@
+package poker;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StudentTests {
+
+	@Test
+	public void testBasicConstructorsAndGetters() {
+		
+		Deck x = new Deck();
+			
+		assertTrue(x.getNumCards() == 52);
+		assertTrue(x.getCardAt(1).toString.equals("2 of A"));
+		
+		
+	}
+
+}
